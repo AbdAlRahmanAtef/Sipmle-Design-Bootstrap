@@ -1,0 +1,35 @@
+@use "../variables/colors" as *;
+.main-btn {
+  font-size: 18px;
+  background-color: $blue-color;
+  border: 3px solid $blue-color;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  transition: 0.3s;
+  &:hover {
+    color: #fff;
+    border-color: #fff;
+    opacity: 0.9;
+  }
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.main-heading {
+  width: fit-content;
+  h3 {
+    color: $main-color-alt;
+    font-size: 40px;
+  }
+  &::before {
+    content: "";
+    width: 120px;
+    height: 2px;
+    background-color: $green;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
